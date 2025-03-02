@@ -61,53 +61,56 @@ margin-left: 20px;
     
 }
 
-/*images in homescreen*/
-.home-img {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    width: 100%; /* Full width but responsive */
-    max-width: 1200px; /* Prevents it from being too wide */
-    height: 100vh; /* Full viewport height */
-    margin: 0 auto; /* Centers the grid on the page */
-    gap: 0; /* No space between images */
-    overflow: hidden; /* Prevents scrolling */
-}
 
-.home-img img {
-    width: 100%; /* Fills grid column */
-    height: 100vh; /* Fills full height */
-    object-fit: cover; /* Ensures proper scaling without distortion */
-}
-
-.homepage-headline {
-    color: white;
-    text-align: center; /* Centers the text */
-    font-size: 50px; /* Makes the text bigger */
-    font-weight: bold; /* Makes the text bold */
-    margin-top: 100px; /* Adds space above if needed */
-}
-
-.under-headline {
-    color: white;
-    text-align: center; /* Centers the text */
-    font-size: 40px; /* Makes the text bigger */
-    font-weight: lighter; /* Makes the text bold */
-}
-
-.intro {
-    color: white;
-    text-align: center; /* Centers the text */
-    font-size: 20px; /* Makes the text bigger */
-    font-weight: lighter; /* Makes the text bold */
-    margin-top: 20px; /* Adds space above if needed */
-    margin-left: 20rem;
-    margin-right: 20rem;
-    padding-bottom: 100px;
+/*social media images at the top*/
+#instagram {
+    width: 100%;
+    cursor: pointer; /* Makes the icon clickable */
+    transition: transform 0.3s ease; /* Hover effect */
 }
 
 
+#facebook {
+    width: 3%;
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+}
 
 
+#tiktok {
+    width: 3%;
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+}
 
 
+#youtube {
+    width: 100%;
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+}
 
+.socialmedia-container {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    margin-right: 6rem; 
+    margin-top: 3rem;
+    gap: 20px; /* Smaller gap between icons */
+}
+
+.socialmedia-container a {
+    display: inline-block; /* Makes the image clickable */
+    width: 30px; /* Icon size */
+    height: 30px; 
+}
+
+.social-icon {
+    width: 100%; 
+    height: 100%; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Smooth hover zoom effect */
+}
