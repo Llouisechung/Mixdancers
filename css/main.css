@@ -6,12 +6,30 @@ body {
     display: flex;
     justify-content: center;  
     align-items: center;      
-    height: 330px;     
+    height: 330px;  
+    position: relative; /* Makes sure the logo doesn't overlap anything */
+    z-index: 1; /* Pushes the logo behind the navigation links */   
 }       
 
 .logo {
-    width: 250px;  
+    width: 20%; /* Adjust size if needed */
+    display: block;
+    margin: 0 auto; /* Center the logo */
+    animation: float 2s ease-in-out infinite; /* Float animation */
 }
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px); /* How high it floats */
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 
 nav {
     
@@ -22,6 +40,8 @@ nav {
     display: flex; /* Aligns items in a row */
     justify-content: center; /* Centers everything horizontally */
     gap: 100px; /* Adds space between lists */
+    position: relative; /* Keeps the nav on top */
+    z-index: 2; /* Higher number = nav stays above floating logo */
 }
 
 ul {
@@ -71,14 +91,14 @@ margin-left: 20px;
 
 
 #facebook {
-    width: 3%;
+    width: 100%;
     cursor: pointer; 
     transition: transform 0.3s ease; 
 }
 
 
 #tiktok {
-    width: 3%;
+    width: 100%;
     cursor: pointer; 
     transition: transform 0.3s ease; 
 }
@@ -100,8 +120,8 @@ margin-left: 20px;
 
 .socialmedia-container a {
     display: inline-block; /* Makes the image clickable */
-    width: 30px; /* Icon size */
-    height: 30px; 
+    width: 40px; /* Icon size */
+    height: 40px; 
 }
 
 .social-icon {
@@ -112,5 +132,5 @@ margin-left: 20px;
 }
 
 .social-icon:hover {
-    transform: scale(1.2); /* Smooth hover zoom effect */
+    transform: scale(1.5); /* Smooth hover zoom effect */
 }
