@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;  
     align-items: center;      
-    height: 330px;  
+    height: 250px;  
     position: relative; /* Makes sure the logo doesn't overlap anything */
     z-index: 1; /* Pushes the logo behind the navigation links */   
 }       
@@ -67,6 +67,10 @@ li a:hover {
 
 #contact-info {
 margin-left: 20px;
+}
+
+span {
+    padding: 1rem;
 }
 
 .footer-info {
@@ -134,3 +138,5 @@ margin-left: 20px;
 .social-icon:hover {
     transform: scale(1.5); /* Smooth hover zoom effect */
 }
+
+  
